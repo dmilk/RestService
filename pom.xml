@@ -4,9 +4,42 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>RestService</groupId>
-    <artifactId>RestService</artifactId>
+    <groupId>ru.anrusstrans.test</groupId>
+    <artifactId>Test</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <name>FirstHiber</name>
+    <build>
+        <finalName>${artifactId}</finalName>
+    </build>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>4.3.4.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>2.5</version>
+        </dependency>
+
+        <!-- Hibernate uses slf4j for logging, for our purposes here use the simple backend -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>1.7.6</version>
+        </dependency>
+
+        <dependency>
+            <groupId>javassist</groupId>
+            <artifactId>javassist</artifactId>
+            <version>3.12.1.GA</version>
+        </dependency>
+
+    </dependencies>
+
 
 
 </project>
