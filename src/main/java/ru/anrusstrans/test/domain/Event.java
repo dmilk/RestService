@@ -1,4 +1,4 @@
-package test;
+package ru.anrusstrans.test.domain;
 
 import java.util.Date;
 

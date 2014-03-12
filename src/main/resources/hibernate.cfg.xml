@@ -8,21 +8,22 @@
     <session-factory>
 
         <!-- Database connection settings -->
-        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
         <!--<property name="connection.url">jdbc:mysql://95.143.14.125:3306/restservice</property>-->
-        <property name="hibernate.connection.url">jdbc:mysql://192.168.0.200:3306/restservice</property>
-        <property name="hibernate.connection.username">root</property>
-        <property name="hibernate.connection.password">password</property>
+        <property name="connection.url">jdbc:mysql://192.168.0.200:3306/restservice</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">password</property>
         <!--<property name="hibernate.query.factory_class">org.hibernate.hql.classic.ClassQueryTranslatorFactory</property>-->
 
         <!-- JDBC connection pool (use the built-in) -->
         <!--<property name="hibernate.connection.pool_size">3</property>-->
 
         <!-- SQL dialect -->
-        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <!--<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect444</property>-->
+        <!--<property name="dialect">org.hibernate.dialect.HSQLDialect444</property>-->
 
         <!-- Enable Hibernate's automatic session context management -->
-        <!--<property name="hibernate.current_session_context_class">thread</property>-->
+        <property name="hibernate.current_session_context_class">thread</property>
 
         <!-- Disable the second-level cache  -->
         <!--<property name="cache.provider_class">org.hibernate.cache.internal.NoCacheProvider</property>-->

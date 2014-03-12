@@ -14,5 +14,14 @@
 
     </class>
 
+    <!--<class name="EventJDBC" table="TEST">-->
+        <!--<id name="id" column="ID">-->
+            <!--<generator class="native"/>-->
+        <!--</id>-->
+        <!--&lt;!&ndash;<property name="desription" type="timestamp" column="EVENT_DATE"/>&ndash;&gt;-->
+        <!--<property name="decription"/>-->
+
+    <!--</class>-->
+
 
 </hibernate-mapping>
