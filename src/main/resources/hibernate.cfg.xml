@@ -30,11 +30,13 @@
 
         <!-- Echo all executed SQL to stdout -->
         <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.generate_statistics">false</property>
 
         <!-- Drop and re-create the database schema on startup -->
         <!--<property name="hbm2ddl.auto">update</property>-->
 
         <mapping resource="ru/anrusstrans/test/domain/Event.hbm.xml"/>
+        <mapping resource="ru/anrusstrans/test/domain/Person.hbm.xml"/>
 
     </session-factory>
 

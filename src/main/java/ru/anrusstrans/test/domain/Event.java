@@ -10,6 +10,15 @@ public class Event {
 
     private String title;
     private Date date;
+    private String xxx;
+
+    public String getXxx() {
+        return xxx;
+    }
+
+    public void setXxx(String xxx) {
+        this.xxx = xxx;
+    }
 
     public Event() { }
 
@@ -35,5 +44,9 @@ public class Event {
 
     public void setDate(Date date) {
         this.date = date;
+    }
+
+    public String toString() {
+        return date.toString();
     }
 }
