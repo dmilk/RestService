@@ -11,6 +11,10 @@
         </id>
         <property name="date" type="timestamp" column="EVENT_DATE"/>
         <property name="title"/>
+        <set name="participants" table="person_event" inverse="true">
+            <key column="event_id"/>
+            <many-to-many column="person_id" class="Person"/>
+        </set>
 
     </class>
 

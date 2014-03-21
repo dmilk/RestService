@@ -13,6 +13,15 @@ public class Person {
     private String lastname;
 
     private Set events = new HashSet();
+    private Set emailAddresses = new HashSet();
+
+    public Set getEmailAddresses() {
+        return emailAddresses;
+    }
+
+    public void setEmailAddresses(Set emailAddresses) {
+        this.emailAddresses = emailAddresses;
+    }
 
     public Set getEvents() {
         return events;
@@ -55,5 +64,8 @@ public class Person {
 
     public void setLastname(String lastname) {
         this.lastname = lastname;
+    }
+    public String toString(){
+        return firstname+" "+lastname+" ";
     }
 }

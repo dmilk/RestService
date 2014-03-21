@@ -13,6 +13,7 @@
         <property name="connection.url">jdbc:mysql://192.168.0.200:3306/restservice</property>
         <property name="connection.username">root</property>
         <property name="connection.password">password</property>
+
         <!--<property name="hibernate.query.factory_class">org.hibernate.hql.classic.ClassQueryTranslatorFactory</property>-->
 
         <!-- JDBC connection pool (use the built-in) -->
@@ -35,8 +36,10 @@
         <!-- Drop and re-create the database schema on startup -->
         <!--<property name="hbm2ddl.auto">update</property>-->
 
-        <mapping resource="ru/anrusstrans/test/domain/Event.hbm.xml"/>
-        <mapping resource="ru/anrusstrans/test/domain/Person.hbm.xml"/>
+        <!--<mapping package="ru.anrusstrans.test.domain"/>-->
+        <mapping class="ru.anrusstrans.test.domain.Event"/>
+        <!--<mapping resource="ru/anrusstrans/test/domain/Event.hbm.xml"/>-->
+        <!--<mapping resource="ru/anrusstrans/test/domain/Person.hbm.xml"/>-->
 
     </session-factory>
 
